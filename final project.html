@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Latte☕</title>
+    <style>
+    body{
+        background-color: #ccffcc;
+    }
+        h1{
+            text-align: center;
+            font-family:'Lucida Sans';
+            font-size: 30px;
+        }
+        h2{
+            text-align: center;
+            border: 1.5px solid #00994d;
+            padding: 16px;
+            font-size: 25px;
+            border-radius: 5px;
+            color: #6666ff;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            border-radius: 10%;
+        
+        }
+        a{
+            text-decoration: none;
+            font-size: 20px;
+        
+        }
+        a:hover{
+            text-decoration: underline;
+
+        }
+        .benefits{
+            color: #0000cc;
+
+
+        }
+        .banana{
+            color: #0000cc;
+
+        }
+        .starbucks{
+            color: #0000cc;
+        }
+        .ingredients{
+            text-align:center;
+            color:#003311 ;
+            font-family: monospace;
+            font-size:25px;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            display: block;
+            margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+          }
+          li{
+          list-style:none;
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
+          }
+          .description{
+              text-align: center;
+            color:#0000cc ;
+            outline-style: groove;
+            font-size: 20px;
+              
+          }
+          .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        box-shadow: yellowgreen;
+      }
+          button{
+              display: block;
+              margin: 25px auto;
+              background-color: darkgreen;
+              color: white;
+              font-size: 15px;
+              padding: 20px;
+              border: yellowgreen;
+              border-radius: 5px;
+              transition: all 200ms ease-in-out;
+          }
+          button:hover{
+              cursor: pointer;
+          }
+          .footer{
+              text-align: center;
+          }
+          .blog{
+              text-decoration: none;
+              color:#0000cc;
+          }
+          .blog:hover{
+              text-decoration: underline;
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>
+        <strong>
+        But First Matcha </strong>
+    </h1>
+    <div class="topnav">
+        <a href="https://www.plantshospital.com/matcha-tea/" target="_blank" class="benefits">Matcha Benefits</a>
+        <a href="https://livinglovingpaleo.com/iced-matcha-latte/" target="_blank" class="banana">Matcha with Banana</a>
+        <a href="https://www.fromneetoyou.com/starbucks-iced-matcha-lattes-recipe/" target="_blank" class="starbucks">Starbucks Recipe</a>
+      </div>
+    <h2>
+        <em>Best Way To Make Home a Matcha Latte </em>
+    </h2>
+    <br />
+    <img src="https://www.acozykitchen.com/wp-content/uploads/2017/04/IcedMatchaLatte-7.jpg" width="300"
+    alt="Matcha Latte☕"
+    />
+    <hr />
+    <P class="description">
+        This Iced Matcha Latte recipe is a creamy and refreshing beverage. 
+        Matcha Lattes can be made hot and cold! If you’re missing your usual iced matcha 
+        latte from Starbucks or your neighborhood coffee shop, 
+        this recipe is for you! As a result, you’ll be able to make your favorite drink at home!
+    </P>
+    <br /> 
+     <ul>
+        <li class="ingredients"> 
+            Ingredients
+        </li>
+        <li>2 teaspoons matcha  </li>
+        <li> 2 tablespoons hot water </li>
+        <li>1 cup warm water </li>
+        <li>Ice</li>
+        <li>Milk of choice </li>
+    </ul>
+    </div>
+<button>
+    Buy Matcha Latte☕
+</button>
+<p class="footer">
+    This page was buid by 
+    <a href="https://danielagorgos.com/" target="_blank" class="blog">
+    Daniela Gorgos
+    </a>
+</p>
+<script>
+    function buyMatcha(){
+        let name=prompt("What is your name?");
+        let email=prompt("What is your email adress?");
+        let hour=prompt("What is the time in your city?");
+        if (hour < 18) {
+  alert(
+      "Good day Your order will be soon " +name + "!"
+  );
+} else {
+  alert(
+"Good evening Your order will be soon " +name + "!"
+  );
+}
+ }
+        let buyMatchaButton= document.querySelector("button");
+        buyMatchaButton.addEventListener("click",buyMatcha);
+</script>
+</body>
+</html>
